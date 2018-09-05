@@ -15,8 +15,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val subClass = SubClass();
+        val subClass = SubClass()
         subClass.logMessage("Hello world")
         subClass.logBadly()
+
+        internalMethod()
+        protectedMethod()
+        privateMethod()
+    }
+
+    /**
+     * This method is internal
+     */
+    internal fun internalMethod() {
+    }
+
+    /**
+     * This method is protected
+     */
+    protected fun protectedMethod() {
+    }
+
+    /**
+     * This method is private
+     */
+    private fun privateMethod() {
     }
 }

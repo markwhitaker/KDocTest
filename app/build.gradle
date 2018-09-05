@@ -37,4 +37,5 @@ dependencies {
 dokka {
     outputFormat = 'html'
     outputDirectory = "$buildDir/javadoc"
+    includeNonPublic = true
 }
