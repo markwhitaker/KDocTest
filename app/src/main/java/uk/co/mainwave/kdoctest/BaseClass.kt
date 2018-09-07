@@ -29,6 +29,7 @@ open class BaseClass {
      */
     internal fun internalMethod() {
         protectedMethod()
+        undocumentedMethod("", true)
     }
 
     /**
@@ -42,6 +43,10 @@ open class BaseClass {
      * This method is private
      */
     private fun privateMethod() {
+    }
+
+    // This is just a regular Kotlin comment, not a KDoc comment
+    fun undocumentedMethod(param1: String, param2: Boolean) {
     }
 
     /**

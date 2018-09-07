@@ -8,6 +8,9 @@ import android.support.v7.app.AppCompatActivity
  */
 class MainActivity : AppCompatActivity() {
 
+    /**
+     * [Android framework method](https://developer.android.com/guide/components/activities/activity-lifecycle)
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
